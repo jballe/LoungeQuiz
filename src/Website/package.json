@@ -6,7 +6,6 @@
     "url": "https://jballe@bitbucket.org/jballe/lounge-quiz.git"
   },
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^0.8.1",
