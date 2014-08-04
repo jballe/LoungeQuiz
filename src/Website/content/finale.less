@@ -1,0 +1,19 @@
+﻿.finale {
+    [app-item] {
+        @margin: 20px;
+
+        position: absolute;
+        top: @margin;
+        left: @margin;
+        right: @margin;
+        bottom: @margin;
+
+        .teaser {
+            font-size: 60px;
+        }
+
+        &, .question, [app-answer] {
+            background-color: lighten(#135C64, 20%);
+        }
+    }
+}

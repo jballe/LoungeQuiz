@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+    <link href="/content/style.css" rel="stylesheet" />
+</head>
+<body ng-app="app" app-keypress-listener>
+    <article class="instructions">
+        <h2>Keys</h2>
+        <ul>
+            <li><strong>C</strong>: Cash (success)</li>
+            <li><strong>A</strong>: Applause (very good)</li>
+            <li><strong>F</strong>: Failure</li>
+            <li><strong>I</strong>: Intro</li>
+            <li><strong>D</strong>: Count down</li>
+        </ul>
+    </article>
+    
+    <aside>
+        <audio app-play-on-keys="c" src="/content/effects/cash.mp3" />
+        <audio app-play-on-keys="a" src="/content/effects/applause.mp3" />
+        <audio app-play-on-keys="d" src="/content/effects/countdown.mp3" />
+        <audio app-play-on-keys="f" src="/content/effects/failure.mp3" />
+        <audio app-play-on-keys="i" src="/content/effects/intro.mp3" />
+    </aside>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

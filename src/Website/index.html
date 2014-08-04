@@ -1,0 +1,53 @@
+<html>
+<head>
+    <link href="content/style.css" rel="stylesheet" />
+</head>
+<body ng-app="app">
+    <section>
+        <ul>
+            <li class="header" app-content>Kategori 1</li>
+            <li app-item>
+                <span class="teaser" app-content>*</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvad er svaret?
+                        </article>
+                        <div app-answer app-content>
+                            Et ord
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>*</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvad er svaret?
+                        </article>
+                        <div app-answer app-content>
+                            Et ord
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul><ul>
+            <li class="header" app-content>Bjergtinder</li>
+            <li app-item>
+                <span class="teaser" app-content>*</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-zoom-out-content="content/Preikestolen_Norge.jpg" data-center="{ 'x': 0.2, 'y': 0.4 }" data-time="90"></article>
+                        <div app-answer app-content>
+                            Et ord
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

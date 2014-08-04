@@ -1,0 +1,361 @@
+﻿<html>
+<head>
+    <link href="/content/style.css" rel="stylesheet" />
+</head>
+<body ng-app="app" class="round1" app-keypress-listener>
+    <aside class="fixed-counter" app-counter="20:00">
+        {{count | nicetime }}
+        <audio app-play-on-keys="c" src="/content/effects/cash.mp3" />
+        <audio app-play-on-keys="a" src="/content/effects/applause.mp3" />
+        <audio app-play-on-keys="d" src="/content/effects/countdown.mp3" />
+        <audio app-play-on-keys="f" src="/content/effects/failure.mp3" />
+        <audio app-play-on-keys="i" src="/content/effects/intro.mp3" />
+    </aside>
+
+    <section>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>FPS 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            FPS 1
+                        </article>
+                        <div app-answer app-content>
+                            Bomb
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>FPS 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <audio src="fps-2.mp3" controls preload="auto" />
+                        </article>
+                        <div app-answer app-content>
+                            Quake 3
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>FPS 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <img src="fps-3.jpg" />
+                        </article>
+                        <div app-answer app-content>
+                            Master Chief fra Halo
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>FPS 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            FPS 4
+                        </article>
+                        <div app-answer app-content>
+                            Battlefield 
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>FPS 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            FPS 5
+                        </article>
+                        <div app-answer app-content>
+                            Call of Duty Modern Warfare 2
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul><ul>
+            <li app-item>
+                <span class="teaser" app-content>Internetsprog 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Internetsprog 1
+                        </article>
+                        <div app-answer app-content>
+                            1337-speek
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internetsprog 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Internetsprog 2
+                        </article>
+                        <div app-answer app-content>
+                            Good game
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internetsprog 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                        </article>
+                        <div app-answer app-content>
+                            Away From Keyboard
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internetsprog 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <img src="internetsprog-4.png" />
+                        </article>
+                        <div app-answer app-content>
+                            Brony
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internetsprog 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <img src="internetsprog-5.png" />
+                        </article>
+                        <div app-answer app-content>
+                            HTML
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Andeby 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Andeby 1
+                        </article>
+                        <div app-answer app-content>
+                            Conelius Blisand
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Andeby 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Andeby 2
+                        </article>
+                        <div app-answer app-content>
+                            Rød 313
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Andeby 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Andeby 3
+                        </article>
+                        <div app-answer app-content>
+                            Grønspætterne
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Andeby 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Andeby 4
+                        </article>
+                        <div app-answer app-content>
+                            Mickey Mouse
+                        </div> 
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Andeby 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Andeby 5
+                        </article>
+                        <div app-answer app-content>
+                            Nora Malkeko
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Musik 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <audio src="Justin Bieber - Baby ft. Ludacris.mp3" preload="auto" />
+                        </article>
+                        <div app-answer app-content>
+                            Canada
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Musik 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Musik 2
+                        </article>
+                        <div app-answer app-content>
+                            3 albums
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Musik 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Musik 3
+                        </article>
+                        <div app-answer app-content>
+                            Daft Punk
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Musik 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Musik 4
+                        </article>
+                        <div app-answer app-content>
+                            Miley Cyrus
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Musik 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Musik 5
+                        </article>
+                        <div app-answer app-content>
+                            First Like
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Internet sjov 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <div class="video">
+                                <video controls="controls" preload="auto" width="950" height="650">
+                                    <source src="/2/internetsjov-1.webm" media="video/webm" />
+                                </video>
+                            </div>
+                        </article>
+                        <div app-answer app-content>
+                            Nyan-cat
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internet sjov 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <video controls="controls" preload="auto" width="950" height="650">
+                                <source src="/2/internetsjov-2.webm" media="video/webm" />
+                            </video>
+                        </article>
+                        <div app-answer app-content>
+                            What does the fox say – Ylvis
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internet sjov 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <video controls="controls" preload="auto" width="950" height="650">
+                                <source src="internetsjov-3.webm" media="video/webm" />
+                            </video>
+                        </article>
+                        <div app-answer app-content>
+                            Friday – Rebecca Black
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internet sjov 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Internet sjov 4
+                        </article>
+                        <div app-answer app-content>
+                            Rick Roll
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internet sjov 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Internet sjov 5
+                        </article>
+                        <div app-answer app-content>
+                            Lolcat
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

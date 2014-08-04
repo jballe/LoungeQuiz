@@ -1,0 +1,31 @@
+﻿.container {
+    perspective: 1000;
+	z-index: 1;
+
+    .card, .question, [app-answer] {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+    	position: relative;
+
+        transform-style: preserve-3d;
+        transition: all 0.9s linear;
+
+        .revealed & {
+            transform: rotateY(180deg);
+            box-shadow: -5px 5px 5px #aaaaaa;
+        }
+    }
+
+    .question, [app-answer] {
+        position: absolute;
+        backface-visibility: hidden;
+        box-sizing: border-box;
+    }
+
+    [app-answer] {
+        transform: rotateY(180deg);
+    }
+}

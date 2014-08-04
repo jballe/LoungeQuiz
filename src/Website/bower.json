@@ -1,0 +1,22 @@
+{
+  "name": "LoungeQuiz",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jballe/LoungeQuiz",
+  "authors": [
+    "Jesper Balle <jba@codehouse.com>"
+  ],
+  "description": "Website used for Quiz (Lounge på #Ermelunden14 distriktslejr #KFUMspejderne)",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.21",
+    "svg.js": "~1.0.0-rc.9"
+  }
+}

@@ -1,0 +1,70 @@
+﻿@columns: 5;
+@rows: 5;
+@margin: 5px;
+@margintop: 20px;
+@margindiff: (@margin * 2);
+
+
+@colleft: 100% / @columns;
+@width: ~"calc(@{colleft} - @{margindiff})";
+
+@rowtop: (100% / @rows);
+@heightdiff: @margindiff ;
+@height: ~"calc(@{rowtop} - @{heightdiff})";
+
+section {
+    ul {
+        position: absolute;
+        top: @margintop;
+        bottom: 0;
+        width: @width;
+        display: block;
+        left: (@colleft * 0);
+        padding: 0 0;
+
+        & + ul {
+            left: (@colleft * 1);
+        }
+
+        & + ul + ul {
+            left: @colleft * 2;
+        }
+
+        & + ul + ul + ul {
+            left: @colleft * 3;
+        }
+
+        & + ul + ul + ul + ul {
+            left: @colleft * 4;
+        }
+    }
+
+    li {
+        display: table;
+        position: absolute;
+        height: @height;
+        width: 100%;
+        margin: @margin @margin;
+        top: @margintop;
+
+        & + li {
+            @top: @rowtop * 1;
+            top: ~"calc(@{margintop} + @{top})";
+        }
+
+        & + li + li {
+            @top: @rowtop * 2;
+            top: ~"calc(@{margintop} + @{top})";
+        }
+        & + li + li + li {
+            @top: @rowtop * 3;
+            top: ~"calc(@{margintop} + @{top})";
+        }
+        & + li + li + li + li {
+            @top: @rowtop * 4;
+            top: ~"calc(@{margintop} + @{top})";
+            @lastmargin: @margin * 3;
+            height: ~"calc(@{rowtop} - @{lastmargin})";
+        }
+    }
+}

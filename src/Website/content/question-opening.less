@@ -1,0 +1,37 @@
+﻿[app-item] {
+    .teaser {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: block;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+
+        .content {
+            color: transparent;
+        }
+    }
+
+    &.active {
+
+        .container {
+            opacity: 1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+
+            .content {
+                color: inherit;
+            }
+        }
+    }
+}

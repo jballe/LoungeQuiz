@@ -1,0 +1,10 @@
+node_modules
+*.log
+**/pingme.txt
+
+# Visual studio / .Net
+*.pdb
+obj
+bin
+*.suo
+*.user

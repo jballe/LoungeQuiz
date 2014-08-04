@@ -1,0 +1,104 @@
+﻿body, * {
+    font-family: 'apple_casualregular', Arial, Arial, Helvetica, sans-serif;
+}
+
+@background: #A0735C;
+
+body {
+    background-color: black;
+}
+
+.round1 {
+
+    ul {
+        li, .question, [app-answer] {
+            background-color: @background;
+        }
+    }
+
+        ul + ul {
+            li, .question, [app-answer] {
+                background-color: #D45A0C;
+            }
+        }
+
+            ul + ul + ul {
+                li, .question, [app-answer] {
+                    background-color: #DEA0F0;
+                }
+            }
+
+                ul + ul + ul + ul {
+                    li, .question, [app-answer] {
+                        background-color: lighten(#135C64, 20%);
+                    }
+                }
+
+                    ul + ul + ul + ul + ul {
+                        li, .question, [app-answer] {
+                            background-color: #FAC676;
+                        }
+                    }
+}
+
+.round2 {
+
+    ul {
+        li, .question, [app-answer] {
+            background-color: lighten(@background, 25%);
+        }
+    }
+
+        ul + ul {
+            li, .question, [app-answer] {
+                background-color: lighten(#D45A0C, 25%);
+            }
+        }
+
+            ul + ul + ul {
+                li, .question, [app-answer] {
+                    background-color: lighten(#DEA0F0, 11%);
+                }
+            }
+
+                ul + ul + ul + ul {
+                    li, .question, [app-answer] {
+                        background-color: lighten( lighten(#135C64, 20%), 25%);
+                    }
+                }
+
+                    ul + ul + ul + ul + ul {
+                        li, .question, [app-answer] {
+                            background-color: lighten(#FAC676, 15%);
+                        }
+                    }
+}
+
+li {
+    border: 1px solid black;
+    background-color: @background;
+    color: black;
+
+    &.header {
+        background-color: white;
+    }
+
+    &.revealed {
+        background-color: black !important;
+        .teaser {
+            visibility: hidden;
+        }
+    }
+}
+
+.teaser {
+    font-size: 24px;
+}
+.container .content {
+    font-size: 42px;
+
+    small {
+        font-size: 30px;
+    }
+}
+

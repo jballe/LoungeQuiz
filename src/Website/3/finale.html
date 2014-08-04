@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+    <link href="/content/style.css" rel="stylesheet" />
+</head>
+<body ng-app="app" class="finale" app-keypress-listener>
+    <article>
+        <div app-item>
+            <span class="teaser" app-content>Distriktssommerlejren</span>
+            <div class="container">
+                <div class="card">
+                    <article app-question app-content>
+                        Hvor mange kilometer har bussen kørt indtil nu på denne lejr?
+                    </article>
+                    <div app-answer app-content>
+                        350 km
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <aside app-keypress-listener>
+        <audio app-play-on-keys="c" src="/content/effects/cash.mp3" />
+        <audio app-play-on-keys="a" src="/content/effects/applause.mp3" />
+        <audio app-play-on-keys="d" src="/content/effects/countdown.mp3" />
+        <audio app-play-on-keys="f" src="/content/effects/failure.mp3" />
+        <audio app-play-on-keys="i" src="/content/effects/intro.mp3" />
+    </aside>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

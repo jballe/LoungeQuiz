@@ -1,0 +1,364 @@
+﻿<html>
+<head>
+    <link href="/content/style.css" rel="stylesheet" />
+</head>
+<body ng-app="app" class="round1" app-keypress-listener>
+    <aside class="fixed-counter" app-counter="15:00">
+        {{count | nicetime }}
+        <audio app-play-on-keys="c" src="/content/effects/cash.mp3" />
+        <audio app-play-on-keys="a" src="/content/effects/applause.mp3" />
+        <audio app-play-on-keys="d" src="/content/effects/countdown.mp3" />
+        <audio app-play-on-keys="f" src="/content/effects/failure.mp3" />
+        <audio app-play-on-keys="i" src="/content/effects/intro.mp3" />
+    </aside>
+
+    <section>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Kendte hunde 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Kendte hunde 1
+                        </article>
+                        <div app-answer app-content>
+                            Jensen
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Kendte hunde 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Kendte hunde 2
+                        </article>
+                        <div app-answer app-content>
+                            Old Yellow (Gamle Gule)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Kendte hunde 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Kendte hunde 3
+                        </article>
+                        <div app-answer app-content>
+                            Beethoven
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Kendte hunde 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Kendte hunde 4
+                        </article>
+                        <div app-answer app-content>
+                            Hooch (fra Turner og Hund)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Kendte hunde 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Kendte hunde 5
+                        </article>
+                        <div app-answer app-content>
+                            Lassie
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul><ul>
+            <li app-item>
+                <span class="teaser" app-content>Animerede streger 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Animerede streger 1
+                        </article>
+                        <div app-answer app-content>
+                            Sorteper (i 1925 – tre år før Mickey Mouse)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Animerede streger 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Animerede streger 2
+                        </article>
+                        <div app-answer app-content>
+                            Troldmandens lærling, der indgår som del af Fantasia
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Animerede streger 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <img src="assets/animerede-3.jpg"/>
+                        </article>
+                        <div app-answer app-content>
+                            La Linea (Linjen)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Animerede streger 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Animerede streger 4
+                        </article>
+                        <div app-answer app-content>
+                            Manga
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Animerede streger 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Animerede streger 5
+                        </article>
+                        <div app-answer app-content>
+                            Tintin
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Mad over bål 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Mad over bål 1
+                        </article>
+                        <div app-answer app-content>
+                            Gammelmandsild
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Mad over bål 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Mad over bål 2
+                        </article>
+                        <div app-answer app-content>
+                            Snobrød
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Mad over bål 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Mad over bål 3
+                        </article>
+                        <div app-answer app-content>
+                            Grubestegning
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Mad over bål 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Mad over bål 4
+                        </article>
+                        <div app-answer app-content>
+                            Nej (nærmere omvendt)
+                        </div> 
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Mad over bål 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Mad over bål 5
+                        </article>
+                        <div app-answer app-content>
+                            Ja (vandet i papiret sørger for, at der ikke går ild i det)
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>MGP 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <audio preload="auto" controls="controls">
+                                <source src="assets/mgp-1.mp3" type="audio/mpeg" />
+                                <source src="assets/mgp-1.ogg" type="audio/ogg" />
+                            </audio>
+                        </article>
+                        <div app-answer app-content>
+                            Razz
+                            (Kickflipper fra 2002)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>MGP 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <audio preload="auto" controls="controls">
+                                <source src="assets/mgp-2.mp3" />
+                                <source src="assets/mgp-2.ogg" />
+                            </audio>
+                        </article>
+                        <div app-answer app-content>
+                            2005 (Shake, Shake, Shake, med Nicolai Kielstrup)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>MGP 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            <audio preload="auto" controls="controls">
+                                <source src="assets/mgp-3.mp3" />
+                                <source src="assets/mgp-3.ogg" />
+                            </audio>
+                        </article>
+                        <div app-answer app-content>
+                            Emma Pi (Du ser den anden vej, 2014)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>MGP 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            MGP 4
+                        </article>
+                        <div app-answer app-content>
+                            B-Boys
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>MGP 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            MGP 5
+                        </article>
+                        <div app-answer app-content>
+                            14
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Loungen 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Loungen 1
+                        </article>
+                        <div app-answer app-content>
+                            4 dage (fra tirsdag eftermiddag)                     
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Loungen 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Loungen 2
+                        </article>
+                        <div app-answer app-content>
+                            Joe
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Loungen 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Loungen 3
+                        </article>
+                        <div app-answer app-content>
+                            65 kr.
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Loungen 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Loungen 4
+                        </article>
+                        <div app-answer app-content>
+                            (Tentsile)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Loungen 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Loungen 5
+                        </article>
+                        <div app-answer app-content>
+                            300 brikker (3 spil med 100 brikker i hver)
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

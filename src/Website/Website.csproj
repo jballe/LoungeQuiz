@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B129BB3C-DEBF-47A7-8D16-43E3790EC5F9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Website</RootNamespace>
+    <AssemblyName>Website</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1\finale.html" />
+    <Content Include="1\2.html" />
+    <Content Include="1\1.html" />
+    <Content Include="1\intro.html" />
+    <Content Include="1\lynrunde.html" />
+    <Content Include="2\finale.html" />
+    <Content Include="2\intro.html" />
+    <Content Include="2\lynrunde.html" />
+    <Content Include="2\tavle.html" />
+    <Content Include="2\buzzer.html" />
+    <Content Include="2\instructions.html" />
+    <Content Include="3\buzzer.html" />
+    <Content Include="3\finale.html" />
+    <Content Include="3\intro.html" />
+    <Content Include="3\lynrunde.html" />
+    <Content Include="3\tavle.html" />
+    <Content Include="content\font\apple-casual\casual.svg" />
+    <Content Include="content\Preikestolen_Norge.jpg" />
+    <Content Include="content\question-layout.less" />
+    <Content Include="content\font\apple-casual\casual.eot" />
+    <Content Include="content\font\apple-casual\casual.ttf" />
+    <Content Include="content\font\apple-casual\casual.woff" />
+    <Content Include="content\font\apple-casual\stylesheet.less" />
+    <Content Include="content\lynrunde.less" />
+    <Content Include="content\finale.less" />
+    <Content Include="content\fixed-counter.less" />
+    <None Include="content\select-grid.less" />
+    <None Include="content\question-opening.less" />
+    <None Include="content\question-flip.less" />
+    <Content Include="content\select-grid.css">
+      <DependentUpon>select-grid.less</DependentUpon>
+    </Content>
+    <Content Include="content\select-theme.less" />
+    <None Include="content\style.less" />
+    <None Include="package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gruntfile.js" />
+    <Content Include="content\style.css" />
+    <Content Include="content\type-zoomout.css">
+      <DependentUpon>type-zoomout.less</DependentUpon>
+    </Content>
+    <Content Include="content\type-zoomout.less" />
+    <Content Include="index.html" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\app\directives\answer.js" />
+    <Content Include="scripts\app\directives\content.js" />
+    <Content Include="scripts\app\modules\av\directives\stopOnEvent.js" />
+    <Content Include="scripts\app\modules\counter\directives\counter.js" />
+    <Content Include="scripts\app\directives\item.js" />
+    <Content Include="scripts\app\directives\question.js" />
+    <Content Include="scripts\app\directives\zoomOut.js" />
+    <Content Include="scripts\app\module.js" />
+    <Content Include="scripts\app\modules\av\directives\keypressListener.js" />
+    <Content Include="scripts\app\modules\av\directives\playOnKeys.js" />
+    <Content Include="scripts\app\modules\av\module.js" />
+    <Content Include="scripts\app\modules\counter\filters\nicetime.js" />
+    <Content Include="scripts\app\modules\counter\module.js" />
+    <Content Include="scripts\modules\imageSizeCalculator.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\effects\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61116</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61116/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

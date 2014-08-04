@@ -1,0 +1,367 @@
+﻿<html>
+<head>
+    <link href="/content/style.css" rel="stylesheet" />
+</head>
+<body ng-app="app" class="round2" app-keypress-listener>
+    <aside class="fixed-counter" app-counter="20:00">
+        {{count | nicetime }}
+    </aside>
+    <section>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Distrikt(lejr) 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvor mange rugbrød havde vi spist til og med i morges
+                        </article>
+                        <div app-answer app-content>
+                            115
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Distrikt(lejr) 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvor mange gulvplader er der brugt til Loungen? <br />
+                            (hint:  nogle af dem er skåret til gulvbrædder og siddekasser)
+                        </article>
+                        <div app-answer app-content>
+                            135 plader (à 60 x 250 cm)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Distrikt(lejr) 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvor stor en del af distriktets samlede antal medlemmer deltager/har deltaget i distriktslejren?
+                            <br />
+                            ca. 1/3 &nbsp; &nbsp; ca. ¼ &nbsp; &nbsp; ca. 1/5 
+                        </article>
+                        <div app-answer app-content>
+                            Ca. 1/3    (291 ud af  895 medlemmer)
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Distrikt(lejr) 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvor mange grupper er der i distriktet?
+                        </article>
+                        <div app-answer app-content>
+                            14
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Distrikt(lejr) 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvad hed de to divisioner, som oprindeligt blev slået sammen til Ermelunden distrikt?   
+                        </article>
+                        <div app-answer app-content>
+                            Mølleå division og Gentofte Kommunes Division  (Gentofte division)
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul><ul>
+            <li app-item>
+                <span class="teaser" app-content>Spejdersport 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Oversæt denne morsemelding
+                            <br />
+                            <br />
+                            .-/…/-.-//-.--/--./--./-../.-./.-/…/../.-..//
+                        </article>
+                        <div app-answer app-content>
+                            Ask Yggdrasil
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Spejdersport 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvor mange rafter skal der bruges til et tre-sidet 10-minutters tårn?
+                        </article>
+                        <div app-answer app-content>
+                            12
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Spejdersport 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvordan lyder de to første linjer af Rolandlejrsangen?
+                        </article>
+                        <div app-answer app-content>
+                            Vi til Rolandlejren drager<br />
+                            og eventyret får
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Spejdersport 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Har der nogensinde været afholdt en verdensjamboree i Danmark?
+                            <br />...og i givet fald:  hvor og hvornår?
+
+                        </article>
+                        <div app-answer app-content>
+                            Ermelundssletten i 1924
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Spejdersport 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvorfor gør spejdere honnør med tre strakte fingre?
+                        </article>
+                        <div app-answer app-content>
+                            Spejderløftets tre dele   (Pligten mod gud, pligten mod andre og pligten mod dig selv)
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Knob 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Det korrekte navn er råbåndsløkkeknude, men kendes nok bedre under navnet...?
+                        </article>
+                        <div app-answer app-content>
+                            Sløjfe
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Knob 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Et knob, der normalt bruges til at fortøje skibe med, kan  - i sin dobbelte version - bruges til at flytte bevidstløse personer med. Hvad hedder dette knob?
+                        </article>
+                        <div app-answer app-content>
+                            Dobbelt pælestik
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Knob 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Et effektivt knob til at binde to stykker tov af forskellig tykkelser sammen – og meget ofte brugt i forbindelse med hejsning af et flag? Hvad hedder knobet.   
+                        </article>
+                        <div app-answer app-content>
+                            Flagknob
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Knob 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvad hedder det knob, som hurtigt kan løses op, og som ifølge legenden er opfundet af en hestetyv, der ofte havde brug for hurtigt at kunne løse sine (stjålne) heste og ride fra stedet?
+                        </article>
+                        <div app-answer app-content>
+                            Dick Turpins knob
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Knob 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvilket musikalsk knob kan bruges til at forkorte et reb med?
+                        </article>
+                        <div app-answer app-content>
+                            Trompetstik
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Internet stats 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Computerspil som har over 100 mio. registrerede bruger og 8 mio. har købt den fulde udgave. Man styrer en figur som kan angribe men endnu vigtige bygge og opfinde sine egne ting. Danmark er blevet bygget her.
+                            <br />
+                            Hvad hedder spillet?
+                        </article>
+                        <div app-answer app-content>
+                            Minecraft
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internet stats 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Multiplayer computerspil som er ”free-to-play”. Daglige peaks på over 800.000 samtidige spillere og ved netop afholdt konkurrence endte samlet præmiesum på 10,9 mio. $. Hvad hedder spillet?
+                        </article>
+                        <div app-answer app-content>
+                            Dota 2
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internet stats 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Internet community hvor de 500 mio. registrerede brugere hvert sekund skriver 41.000 opslag til deres venner. Hvad hedder dette community?
+                        </article>
+                        <div app-answer app-content>
+                            Facebook
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internet stats 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Hvert minut bliver hentet 900.000 musiknumre fra denne tjeneste som består af et program og en internetbutik med samme navn
+                        </article>
+                        <div app-answer app-content>
+                            iTunes
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Internet stats 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Der sendes hvert sekund mere end 204 millioner af disse beskeder som vel nærmest alle internet brugere har mindst en konto til. Hvad hedder denne beskedform?
+                        </article>
+                        <div app-answer app-content>
+                            E-mail
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li app-item>
+                <span class="teaser" app-content>Starter med sp 1</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Et af de almindeligste pattedyr, findes både i skove og i det åbne land, især hvor jorden er dækket af planter. Smager dårligt så mange rovdyr efterlader dyret efter at have dræbt det.
+                        </article>
+                        <div app-answer app-content>
+                            Spidsmus
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Starter med sp 2</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Lidelse som giver udslag i en dobbeltsidig trykkende og strammende smerte som at have et stramt bånd om hovedet. Kan normalt bedres ved fysisk aktivitet. Mange årsager såsom stress, bekymringer, dårlig arbejdsstilling, muskelspændinger, søvnproblemer
+                        </article>
+                        <div app-answer app-content>
+                            Spændingshovedpine
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Starter med sp 3</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Betegnelse for når en genetisk mutation opstår uden nogen øjensynlig årsag
+                        </article>
+                        <div app-answer app-content>
+                            Spontan mutation
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Starter med sp 4</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Populært navn med relation til en fritidsaktivitet for et pulver der dannet ved kemisk reaktion mellem saltsyre og ammuniak og kan spises som slik. Fås bl.a. i rør og dåser, men selve pulveret kan også indgå i meget andet slik
+                        </article>
+                        <div app-answer app-content>
+                            Spejdersnus
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li app-item>
+                <span class="teaser" app-content>Starter med sp 5</span>
+                <div class="container">
+                    <div class="card">
+                        <article app-question app-content>
+                            Benævnelse for vare ofte solgt på plastik flasker, primært indeholdende ethanol, som kan anvendes som delelement til frembringelse af ild
+                        </article>
+                        <div app-answer app-content>
+                            Sprit
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <aside>
+        <audio app-play-on-keys="c" src="/content/effects/cash.mp3" />
+        <audio app-play-on-keys="a" src="/content/effects/applause.mp3" />
+        <audio app-play-on-keys="d" src="/content/effects/countdown.mp3" />
+        <audio app-play-on-keys="f" src="/content/effects/failure.mp3" />
+        <audio app-play-on-keys="i" src="/content/effects/intro.mp3" />
+    </aside>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

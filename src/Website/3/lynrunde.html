@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+    <link href="/content/style.css" rel="stylesheet" />
+</head>
+<body ng-app="app" class="finale" app-keypress-listener>
+    <article class="lyn" app-counter="30">
+        <div class="teaser content"><span>Lynrunde</span></div>
+        <div class="counter content"><span>{{count}}</span></div>
+    </article>
+
+    <aside>
+        <audio app-play-on-keys="c" src="/content/effects/cash.mp3" />
+        <audio app-play-on-keys="a" src="/content/effects/applause.mp3" />
+        <audio app-play-on-keys="d" src="/content/effects/countdown.mp3" />
+        <audio app-play-on-keys="f" src="/content/effects/failure.mp3" />
+        <audio app-play-on-keys="i" src="/content/effects/intro.mp3" />
+    </aside>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

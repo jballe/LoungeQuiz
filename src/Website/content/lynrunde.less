@@ -1,0 +1,37 @@
+﻿.lyn {
+
+    &, .teaser, .counter {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    color: white;
+    display: table;
+
+    .teaser, .counter {
+        vertical-align: middle;
+        text-align: center;
+        display: table-cell;
+    }
+
+    .teaser {
+        font-size: 250px;
+    }
+
+    .counter {
+        display: none;
+        font-size: 420px;
+    }
+
+    &.active {
+        .teaser {
+            display: none;
+        }
+
+        .counter {
+            display: table-cell;
+        }
+    }
+}
