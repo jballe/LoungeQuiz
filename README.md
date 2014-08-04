@@ -1,9 +1,9 @@
 LoungeQuiz
 ==========
 
-Quiz - used in Lounge på [https://tagboard.com/ermelunden14](#Ermelunden14) distriktslejr [https://tagboard.com/kfumspejderne](#kfumspejderne).
+Quiz - used in Lounge på [#Ermelunden14](https://tagboard.com/ermelunden14) distriktslejr [#kfumspejderne](https://tagboard.com/kfumspejderne).
 
-Hope you can use it :) [https://tagboard.com/voresbidrag](#voresbidrag)
+Hope you can use it :) [#voresbidrag](https://tagboard.com/voresbidrag)
 
 ## What is it
 * Interface to show questions and answer for a quiz show.
